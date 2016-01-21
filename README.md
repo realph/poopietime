@@ -1,35 +1,4 @@
-#Gulp Zero
-
-Same gulp taste. Zero sugar. A gulp recipe.
-
-##What the heck is this?
-
-A low-calorie flavour gulp recipe.
-
-##No, seriously?
-
-Gulp Zero is a starting point for projects using the gulp build system. I've used a lot of gulp systems over the past few months, and they often come in two flavours: stripped or bloated. So I decided to create my own.
-
-##Features
-- Compiles Sass
-- Minifies css
-- Browserify (lets you `require` packages installed via npm and bundle your JavaScript)
-- Minifies JS
-- Autoprefixer (adds vendor prefixes so you don't have to)
-- Browser reload on saved changes
-- Spins up local server
-
-##Getting started
-
-If you would like to use this on a project, simply run:
-
-    git clone https://github.com/realph/gulp-zero.git
-    cd gulp-zero
-    npm i gulp -g
-    npm i
-    gulp
-
-It's that simple!
+#poopietime
 
 #License
 
