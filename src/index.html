@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Gulp Zero</title>
+    <link rel="stylesheet" href="./css/app.css">
+  </head>
+  <body ng-app="poopieApp">
+    <div class="container" ng-controller="mainCtrl">
+      <div class="item">
+        <a ng-click="poopieTime()">poopytime</a>
+
+        <ul>
+          <li ng-repeat="p in poopies">
+            {{ p.actor }}, {{ p.time }}, {{ p.latitude }}, {{ p.longitude }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  <script src="./js/app.js"></script>
+  </body>
+</html>
