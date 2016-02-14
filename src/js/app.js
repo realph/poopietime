@@ -2,19 +2,18 @@
   var angular = require('angular');
   var firebase = require('firebase');
   var angularfire = require('angularfire');
+  var poopieService = require('./poopieService');
 
-  angular.module('poopieApp', ['firebase'])
+  console.log("hello");
 
-  .factory('poopieService', ['$firebaseArray',
-    function($firebaseArray) {
-      var ref = new Firebase("https://blistering-fire-2693.firebaseio.com");
-      var poopiesRef = ref.child("poopies");
-      return $firebaseArray(poopiesRef);
-    }
-  ])
-
+  angular
+  .module('poopieApp', ['firebase', 'poopieService'])
+  // .service('poopieService', require('./poopieService'))
   .controller('mainCtrl', ['$scope', 'poopieService',
     function($scope, poopieService) {
+
+      // poopieService.getPoopies();
+      console.log("another");
 
       var latitude;
       var longitude;
@@ -48,7 +47,6 @@
         });
       }
 
-      $scope.poopies = poopieService;
     }
   ]);
 
